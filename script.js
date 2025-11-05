@@ -15,10 +15,6 @@ async function main() {
     const randomIndex = Math.floor(Math.random() * phrases.length);
     phraseElement.textContent = phrases[randomIndex];
   }
-
-  // Mostra una frase iniziale
-  showRandomPhrase();
-
   // Quando premi il bottone, cambia frase
   newQuoteButton.addEventListener('click', showRandomPhrase);
 
@@ -34,6 +30,7 @@ async function main() {
 }
 
 main();
+
 
 
 
