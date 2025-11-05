@@ -7,7 +7,7 @@ async function loadPhrases() {
 
 async function main() {
   const phrases = await loadPhrases();
-  const phraseElement = document.getElementById('phrase');
+  const phraseElement = document.getElementById('quote');
   const newQuoteButton = document.getElementById('new-quote');
   const screenshotButton = document.getElementById('screenshot');
 
@@ -34,4 +34,5 @@ async function main() {
 }
 
 main();
+
 
