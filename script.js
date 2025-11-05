@@ -1,6 +1,6 @@
 // Carica le frasi dal file di testo e le mostra casualmente
 async function loadPhrases() {
-  const response = await fetch('phrases.txt');
+  const response = await fetch('frasi.txt');
   const text = await response.text();
   return text.split('\n').filter(line => line.trim() !== '');
 }
@@ -34,5 +34,6 @@ async function main() {
 }
 
 main();
+
 
 
