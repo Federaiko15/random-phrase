@@ -8,6 +8,7 @@
     body {
       font-family: "Poppins", sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -16,14 +17,34 @@
       text-align: center;
       padding: 20px;
     }
+
     .quote {
       font-size: 1.5rem;
       max-width: 500px;
+      margin-bottom: 20px;
+      transition: opacity 0.3s ease;
+    }
+
+    button {
+      background-color: #9a8c98;
+      border: none;
+      color: #f2e9e4;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #4a4e69;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="quote" id="quote">Caricamento...</div>
+  <div class="quote" id="quote">Premi il pulsante per generare una frase ✨</div>
+  <button id="new-quote">Nuova frase</button>
 
   <script src="script.js"></script>
 </body>
