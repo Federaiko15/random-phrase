@@ -1,0 +1,82 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("sfondo-sito-francesca.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+/* Bottone screenshot in alto a sinistra */
+#screenshot.top-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#screenshot.top-left:hover {
+  transform: scale(1.1);
+}
+
+/* Contenitore principale */
+.content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 85%;
+}
+
+/* Testo della frase */
+.quote {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Bottone nuova frase */
+#new-quote {
+  background-color: #9a8c98;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#new-quote:hover {
+  background-color: #4a4e69;
+  transform: scale(1.05);
+}
+
+/* Ottimizzazione per schermi piccoli */
+@media (max-width: 600px) {
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  #new-quote {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  #screenshot.top-left {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+}
