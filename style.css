@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #7C9A92;;
   border: none;
   font-size: 1.5rem;
   padding: 8px 12px;
@@ -50,7 +50,7 @@ body {
 
 /* Bottone nuova frase */
 #new-quote {
-  background-color: #9a8c98;
+  background-color:#7C9A92;;
   border: none;
   color: #fff;
   font-size: 1rem;
@@ -81,4 +81,5 @@ body {
     padding: 6px 10px;
   }
 }
+
 
