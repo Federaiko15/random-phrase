@@ -4,51 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frase Randomica</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f2e9e4;
-      color: #22223b;
-      text-align: center;
-      padding: 20px;
-    }
 
-    .quote {
-      font-size: 1.5rem;
-      max-width: 500px;
-      margin-bottom: 20px;
-      transition: opacity 0.3s ease;
-    }
-
-    button {
-      background-color: #9a8c98;
-      border: none;
-      color: #f2e9e4;
-      font-size: 1rem;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #4a4e69;
-      transform: scale(1.05);
-    }
-  </style>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Foglio di stile -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="quote" id="quote">Premi il pulsante per generare una frase ✨</div>
-  <button id="new-quote">Nuova frase</button>
-  <button id="screenshot">Fai uno screenshot</button>
+  <button id="screenshot" class="top-left">📸</button>
+
+  <div class="content">
+    <div class="quote" id="quote">Premi il pulsante per generare una frase ✨</div>
+    <button id="new-quote">Nuova frase</button>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
