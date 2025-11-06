@@ -17,7 +17,7 @@ body {
 #screenshot.top-left {
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   background-color: #7C9A92;;
   border: none;
   font-size: 1rem;
@@ -61,7 +61,6 @@ body {
 }
 
 #new-quote:hover {
-  background-color: #4a4e69;
   transform: scale(1.05);
 }
 
@@ -81,6 +80,7 @@ body {
     padding: 6px 10px;
   }
 }
+
 
 
 
